@@ -63,6 +63,8 @@ public class AttachTest {
                 .executeTestJava(opts)
                 .outputTo(System.out)
                 .errorTo(System.out);
-        outputAnalyzer.shouldHaveExitValue(0);
+        // outputAnalyzer.shouldHaveExitValue(0);
+        // fail intentionally to see the output of the test
+        outputAnalyzer.shouldHaveExitValue(1);
     }
 }
